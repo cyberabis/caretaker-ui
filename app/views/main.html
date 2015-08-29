@@ -1,16 +1,39 @@
 <div class="row">
   <div class="col-xs-12">
-    <h4>Current Status <small class="pull-right">23:26 PM 29 Aug, 2015</small></h4>
+    <h4><span class="glyphicon glyphicon-heart-empty"></span> Current Status <small class="pull-right">{{clock}}</small></h4>
   </div>
 </div>
 <br/>
 <div class="row">
   <div class="col-xs-12">
-    <center>
-        <img class="ct-state" src="images/idle.png">
-      </br/><br/>
-        <h4 class="text-success">Idle <small>since 30 mins</small></h4>
-    </center>
+    <div ng-show="currState == 'Idle'">
+      <center>
+          <img class="ct-state" src="images/idle.png">
+        </br/><br/>
+          <h4 class="text-success">Idle <small>since {{currStateTime}}</small></h4>
+      </center>
+    </div>
+    <div ng-show="currState == 'Fall'">
+      <center>
+          <img class="ct-state" src="images/fall.png">
+        </br/><br/>
+          <h4 class="text-danger">Fall, go help! <small>at {{currStateTime}}.</small></h4>
+      </center>
+    </div>
+    <div ng-show="currState == 'Moving'">
+      <center>
+          <img class="ct-state" src="images/sleep.png">
+        </br/><br/>
+          <h4 class="text-success">Sleeping <small>since {{currStateTime}}</small></h4>
+      </center>
+    </div>
+    <div ng-show="currState == 'Aggitated'">
+      <center>
+          <img class="ct-state" src="images/aggitated.png">
+        </br/><br/>
+          <h4 class="text-danger">Aggitated <small>since {{currStateTime}}</small></h4>
+      </center>
+    </div>
   </div>
 </div>
 <br/><br/>

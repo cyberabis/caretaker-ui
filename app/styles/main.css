@@ -90,6 +90,22 @@ body {
 
 .ct-cell-green {
   background-color: #70BF41;
+  min-height: 20px;
+}
+
+.ct-cell-yellow {
+  background-color: #F5D328;
+  min-height: 20px;
+}
+
+.ct-cell-orange {
+  background-color: #F39019;
+  min-height: 20px;
+}
+
+.ct-cell-red {
+  background-color: #C82506;
+  min-height: 20px;
 }
 
 .ct-spacer {

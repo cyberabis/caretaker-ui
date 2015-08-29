@@ -11,8 +11,17 @@
 angular
   .module('caretakerApp', [
     'ngResource',
-    'ngRoute'
+    'ngRoute',
+    'btford.socket-io'
   ])
+  /*
+  .factory('mySocket', function (socketFactory) {
+    //return socketFactory();
+    var mySocket = socketFactory();
+    mySocket.forward('error');
+    return mySocket;
+  })
+  */
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
