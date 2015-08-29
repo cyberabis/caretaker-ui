@@ -80,30 +80,18 @@ body {
 
 /* My custom */
 
-.or-profile-img {
-  height: 32px;
-  border-radius: 25px;
+.ct-state {
+  height: 200px;
 }
 
-.or-badge {
-  height: 120px;
-  width: 120px;
+.ct-legend {
+  height:20px;
 }
 
-.or-badge-next {
-  height: 120px;
-  width: 120px;
-  opacity: 0.35;
+.ct-cell-green {
+  background-color: #70BF41;
 }
 
-.label {
-  font-size: 15px;
-}
-
-.or-add-friend {
-  height: 15px;
-}
-
-.or-dp {
-  height: 150px;
+.ct-spacer {
+  min-height: 10px;
 }
