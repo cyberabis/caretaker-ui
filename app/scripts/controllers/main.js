@@ -21,8 +21,8 @@ angular.module('caretakerApp')
   	$scope.currState = 'Idle';
   	$scope.currStateTime = moment().format("h:mm A");
   	
-  	var socket = io('http://192.168.43.55:3000');
-  	//var socket = io('http://localhost:3000');
+  	//var socket = io('http://192.168.43.55:3000');
+  	var socket = io('http://localhost:3000');
   	socket.on('motion', function(msg){
 		console.log(msg);
 		var process = true;
@@ -35,7 +35,7 @@ angular.module('caretakerApp')
 				setTimeout(function(){
 				  	//your code to be executed after delay
 					process = true;
-				}, 5000);
+				}, 8000);
 			} else {
 				$scope.currState = msg.state;
 				$scope.currStateTime = moment().format("h:m A");
