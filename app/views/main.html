@@ -22,20 +22,22 @@
     </div>
     <div ng-show="currState == 'Moving'">
       <center>
-          <img class="ct-state" src="images/sleep.png">
+          <img class="ct-state" src="images/walk.png">
         </br/><br/>
-          <h4 class="text-success">Sleeping <small>since {{currStateTime}}</small></h4>
+          <h4 class="text-success">Walking <small>since {{currStateTime}}</small></h4>
       </center>
     </div>
     <div ng-show="currState == 'Aggitated'">
       <center>
           <img class="ct-state" src="images/aggitated.png">
         </br/><br/>
-          <h4 class="text-danger">Aggitated <small>since {{currStateTime}}</small></h4>
+          <h4 class="text-danger">Aggitated, go help! <small>since {{currStateTime}}</small></h4>
       </center>
     </div>
   </div>
 </div>
 <br/><br/>
+
+<toaster-container toaster-options="{'time-out': 3000}"></toaster-container>
 
 

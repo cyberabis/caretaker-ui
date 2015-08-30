@@ -12,7 +12,9 @@ angular
   .module('caretakerApp', [
     'ngResource',
     'ngRoute',
-    'btford.socket-io'
+    'btford.socket-io',
+    'toaster',
+    'ngAnimate'
   ])
   /*
   .factory('mySocket', function (socketFactory) {
