@@ -14,7 +14,8 @@ angular
     'ngRoute',
     'btford.socket-io',
     'toaster',
-    'ngAnimate'
+    'ngAnimate',
+    'highcharts-ng'
   ])
   /*
   .factory('mySocket', function (socketFactory) {
@@ -35,6 +36,11 @@ angular
         templateUrl: 'views/activity.html',
         controller: 'ActivityCtrl',
         controllerAs: 'activity'
+      })
+      .when('/progression', {
+        templateUrl: 'views/progression.html',
+        controller: 'ProgressionCtrl',
+        controllerAs: 'progression'
       })
       .otherwise({
         redirectTo: '/'

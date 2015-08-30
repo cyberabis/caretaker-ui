@@ -25,9 +25,9 @@
     <div class="container">
       <div class="header">
         <ul class="nav nav-pills pull-right">
-          <li><a ng-href="#/">Now</a></li>
+          <li><a ng-href="#/">Current Activity</a></li>
           <li><a ng-href="#/progression">Progression</a></li>
-          <li><a ng-href="#/activity">Activity</a></li>
+          <li><a ng-href="#/activity">Recent Summary</a></li>
         </ul>
        
         <h3 class="text-primary">CareTaker</h3>
@@ -53,16 +53,19 @@
     <script src="bower_components/angular-socket-io/socket.js"></script>
     <script src="bower_components/AngularJS-Toaster/toaster.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/highcharts-ng/dist/highcharts-ng.js"></script>
     <script src="bower_components/moment-timezone/builds/moment-timezone-with-data-2010-2020.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/moment-timezone-data.js"></script>
+        <script src="scripts/highcharts.src.js"></script>
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/activity.js"></script>
         <script src="scripts/socket.io.js"></script>
+        <script src="scripts/controllers/progression.js"></script>
         <!-- endbuild -->
 </body>
 </html>

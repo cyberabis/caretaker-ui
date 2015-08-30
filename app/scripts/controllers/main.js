@@ -11,7 +11,7 @@ angular.module('caretakerApp')
 
     var tick = function() {
         //$scope.clock = Date.now() // get the current time
-        $scope.clock = moment().format("h:m:ss A[,] MMM D");
+        $scope.clock = moment().format("h:mm:ss A[,] MMM D");
         $timeout(tick, $scope.tickInterval); // reset the timer
     }
 
@@ -19,9 +19,10 @@ angular.module('caretakerApp')
     $timeout(tick, $scope.tickInterval);
     
   	$scope.currState = 'Idle';
-  	$scope.currStateTime = moment().format("h:m A");
+  	$scope.currStateTime = moment().format("h:mm A");
   	
   	var socket = io('http://192.168.43.55:3000');
+  	//var socket = io('http://localhost:3000');
   	socket.on('motion', function(msg){
 		console.log(msg);
 		var process = true;

@@ -104,10 +104,14 @@ body {
 }
 
 .ct-cell-red {
-  background-color: #C82506;
+  background-color: #EC5D57;
   min-height: 20px;
 }
 
 .ct-spacer {
   min-height: 10px;
+}
+
+.ct-chart {
+  height: 175px;
 }

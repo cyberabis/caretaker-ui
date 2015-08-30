@@ -32,6 +32,7 @@ module.exports = function(config) {
       'bower_components/angular-socket-io/socket.js',
       'bower_components/AngularJS-Toaster/toaster.js',
       'bower_components/bootstrap/dist/js/bootstrap.js',
+      'bower_components/highcharts-ng/dist/highcharts-ng.js',
       'bower_components/moment-timezone/builds/moment-timezone-with-data-2010-2020.js',
       'bower_components/angular-mocks/angular-mocks.js',
       // endbower
