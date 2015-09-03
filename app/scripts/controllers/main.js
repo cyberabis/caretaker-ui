@@ -27,7 +27,7 @@ angular.module('caretakerApp')
 		console.log(msg);
 		var process = true;
 		if( ($scope.currState != msg.state) && (process) ) {
-			if((msg.state == 'Fall')||(msg.state == 'Aggitated')) {
+			if((msg.state == 'Fall')||(msg.state == 'Agitated')) {
 				process = false;
 				toaster.pop('error', "Alert", "Please, go help!");
 			  	$scope.currState = msg.state;
